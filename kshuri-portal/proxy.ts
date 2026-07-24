@@ -118,7 +118,7 @@ export function proxy(request: NextRequest) {
     "img-src 'self' data: blob: https://*.supabase.co https://res.cloudinary.com https://images.unsplash.com https://*.googleusercontent.com https://www.gstatic.com https://www.google.com",
     // Backend API + Firebase identity endpoints. https://*.estylr.com is a
     // wildcard for production deploys.
-    "connect-src 'self' http://localhost:3001 https://kshuri-backend.onrender.com https://*.estylr.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com",
+    "connect-src 'self' http://localhost:3001 https://kshuri-backend.onrender.com https://*.estylr.com https://identitytoolkit.googleapis.com https://securetoken.googleapis.com https://www.googleapis.com https://www.google.com",
     // Firebase phone auth uses a reCAPTCHA iframe hosted by Google.
     "frame-src https://*.firebaseapp.com https://www.google.com https://recaptcha.net",
     "base-uri 'self'",
