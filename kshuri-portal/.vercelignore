@@ -1,0 +1,30 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# kshuri-portal — Vercel ignore rules
+#
+# Only relevant when Vercel is building this app via Git integration (not the
+# prebuilt strategy). During prebuilt deploys, this file is not consulted.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Build cache — always regenerated
+.turbo
+.next/cache
+
+# Test + e2e — not needed at runtime
+e2e
+tests
+playwright.config.ts
+vitest.config.ts
+lighthouserc.js
+
+# Local dev tooling
+.playwright-mcp
+.dev-logs
+.superpowers
+.backup
+.claude
+
+# Docs + infra — not part of the app bundle
+docs
+
+# Secrets — never upload to Vercel (set via dashboard)
+.env.local
